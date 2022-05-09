@@ -14,3 +14,7 @@ css: transition: color 0.5s ease 0s;
 css:   flex-grow: 1;
 
 <Badge type={orderStatus[item.status]} content={item.status}/>
+slice() -> 배열 반환
+
+customerpage : pagination 재확인[...Array(pages).keys()]
+
