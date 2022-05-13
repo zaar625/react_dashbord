@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Dropdown from '../dropdown/Dropdown'
+import ThemeMenu from '../ThemeMenu.jsx/ThemeMenu'
 import notifications from '../../assets/JsonData/notification.json'
 import user_image from '../../assets/images/tuat.png'
 import user_menu from '../../assets/JsonData/user_menus.json'
@@ -67,8 +68,7 @@ const TopNav = () => {
                 </div>
                 <div className='topnav__right-item'>
                     {/* theme setting */}
-                    <Dropdown />
-
+                    <ThemeMenu/>
                 </div>
             </div>
         </div>

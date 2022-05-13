@@ -18,3 +18,4 @@ slice() -> 배열 반환
 
 customerpage : pagination 재확인[...Array(pages).keys()]
 
+로컬스토리지 유지 시간
