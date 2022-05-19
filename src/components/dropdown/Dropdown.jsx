@@ -8,7 +8,7 @@ const clickOutsideRef = (content_ref, toggle_ref) => {
         if (toggle_ref.current && toggle_ref.current.contains(e.target)) {
             content_ref.current.classList.toggle('active')
         } else {
-            // user click outside toggle and content
+            // 외부에 클릭했을때,(즉 이벤트타겟이 없을때)
             if (content_ref.current && !content_ref.current.contains(e.target)) {
                 content_ref.current.classList.remove('active')
             }
@@ -20,6 +20,8 @@ const Dropdown = props => {
 
     const dropdown_toggle_el = useRef(null)
     const dropdown_content_el = useRef(null)
+    // console.log(dropdown_toggle_el)
+    // console.log(dropdown_content_el)
 
     clickOutsideRef(dropdown_content_el, dropdown_toggle_el)
 
